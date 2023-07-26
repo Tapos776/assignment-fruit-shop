@@ -33,7 +33,59 @@
     </style>
 </head>
 
-<body>
+<body class="lato-font">
+    <header class="container mx-auto my-5">
+        <nav>
+            <div class="navbar primary-color rounded-full p-4">
+                <!-- menu part -->
+                <div class="navbar-start hidden lg:flex md:w-auto md:flex lg:w-4/5">
+                    <ul class="menu menu-horizontal px-1 font-medium text-white text-[18px] mx-10 ">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <!-- logo part -->
+                <div class="normal-case text-xl navbar-center gap-5  mx-5">
+                    <div><img src="images/logo.png" alt=""></div>
+                    <div>
+                        <p class="text-white text-[40px] font-bold ">Fruit Burst</p>
+                    </div>
+                </div>
+                <!-- hidden menu part -->
+                <div class="navbar-end">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Banana</a></li>
+                            <li>
+                                <a>Mango</a>
+                                <ul class="p-2">
+                                    <li><a>Harivanga</a></li>
+                                    <li><a>Amropoli</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Apple</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- search box part -->
+                <div class="navbar-end hidden lg:flex  ">
+                    <input type="text" placeholder="Search Here" class=" py-3 px-20 rounded-full relative"><i
+                        class="fa-solid fa-magnifying-glass fa-2xl absolute mr-4 text-gray-400"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
 </body>
 
